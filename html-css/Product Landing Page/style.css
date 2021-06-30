@@ -209,7 +209,7 @@ body {
 footer {
     
     max-width: 100%;
-    background-color: gainsboro;
+    margin-top: 100px;
 }
 
 footer li {
@@ -231,6 +231,11 @@ footer a {
 }
 
 footer > p {
-    margin: 10px;
+    margin-right: 100px;
     text-align: right;
+}
+
+footer li:hover{
+    
+    background: gainsboro;
 }
