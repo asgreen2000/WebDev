@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.google.com/specimen/Josefin+Sans');
+
+    body {
+      font-family: 'Josefin+Sans', sans-serif;
+      padding: 200px 200px 0px 200px;
+      background: url(/images/bg-pattern-desktop.svg);
+    }
+
+    * {
+      box-sizing:content-box;
+    }
+
+    .main {
+      display: flex;
+      min-height: 100vh;
+      background: url(/images/bg-pattern-desktop.svg);
+      border: 1px;
+      border-color: aqua;
+      border-style: solid;
+      padding: 25px;
+    }
+
+    .left {
+      width: 60%;
+      padding: 50px;
+    }
+
+    .right {
+      width: 40%;
+      background: url(/images/hero-desktop.jpg);
+      
+    }
+
+    .main h1 {
+      opacity: 0.7;
+    }
+    .main span {
+      color: pink;
+      
+      letter-spacing: 10px;
+    }
+
+    .main p {
+      color: pink;
+      opacity: 0.8;
+    }
+
+    .left input[type = "email"] {
+      width: 60%;
+      font-size: 30px;
+      border-radius: 20px;
+      padding: 8px;
+      border-color: palevioletred;
+      background: inherit;
+    }
+    .left button {
+      height: 49px;
+      width: 60px;
+      margin-left: -25px;
+      border-radius: 20px;
+      background-color: pink;
+    }
+  </style>
+</head>
+
+
+<body>
+  <div class="main"> 
+    <div class="left">
+      <img src="/images/logo.svg">
+      <h1><span>WE'RE </span> <br>COMING <br> SOON</h1>
+      <p>
+        Hello fellow shoppers! We're currently building our new fashion store.
+        Add your email below to say up-to-date with announcements and
+        out launch details.
+      </p>
+
+      <form action="#">
+        <input type="email" placeholder="Email address">
+          <button>
+            <img src="/images/icon-arrow.svg">
+          </button>
+      
+      </form>
+    </div>
+    
+    <div class="right">
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,213 @@
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@asgreen2000 
+AbePlays
+/
+Frontend-Challenge-6
+1
+00
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Frontend-Challenge-6/style/styles.css
+@AbePlays
+AbePlays Add files via upload
+Latest commit 38781a0 on 5 Jun, 2020
+ History
+ 1 contributor
+184 lines (165 sloc)  3.53 KB
+  
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  font-family: "Josefin Sans", sans-serif;
+  min-height: 100vh;
+  font-size: 16px;
+  background: linear-gradient(135deg, white, #fff5f5);
+}
+
+body .img {
+  position: absolute;
+  padding-top: 2rem;
+  padding-left: 10%;
+}
+
+@media screen and (max-width: 900px) {
+  body .img {
+    position: static;
+    width: 100%;
+    height: 8vh;
+    padding-top: 1rem;
+    padding-left: 5%;
+  }
+}
+
+body .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 900px) {
+  body .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+body .main .left {
+  width: 40%;
+  height: 100vh;
+  background-image: url("../images/hero-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (max-width: 900px) {
+  body .main .left {
+    height: 40vh;
+    width: 100%;
+    background-position: top center;
+    background-image: url("../images/hero-mobile.jpg");
+  }
+}
+
+body .main .right {
+  max-width: 60%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 10%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 900px) {
+  body .main .right {
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    display: block;
+    padding: 5rem 3rem;
+    max-width: 100%;
+    text-align: center;
+  }
+}
+
+body .main .right h1 {
+  text-transform: uppercase;
+  color: #ce9797;
+  font-weight: 300;
+  font-size: 4rem;
+  letter-spacing: 1rem;
+}
+
+body .main .right span {
+  color: #413a3a;
+  font-weight: 700;
+  font-size: 4rem;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+}
+
+body .main .right p {
+  font-size: 1.1rem;
+  margin-top: 2rem;
+  width: 80%;
+  color: #ce9797;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 900px) {
+  body .main .right p {
+    width: 100%;
+  }
+}
+
+body .main .right .submit {
+  margin-top: 3rem;
+  position: relative;
+  width: 80%;
+}
+
+@media screen and (max-width: 900px) {
+  body .main .right .submit {
+    width: 100%;
+  }
+}
+
+body .main .right .submit input {
+  width: 100%;
+  height: 3.5rem;
+  border: 1px solid #dcc1c1;
+  border-radius: 2rem;
+  padding-left: 2rem;
+  font-size: 1.1rem;
+  color: #dcc1c1;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body .main .right .submit input:focus {
+  outline: none;
+}
+
+body .main .right .submit div {
+  right: 0;
+  top: 0;
+  height: 3.5rem;
+  border-radius: 2rem;
+  width: 7rem;
+  background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  -webkit-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+}
+
+body .main .right .submit div:hover {
+  opacity: 0.9;
+}
