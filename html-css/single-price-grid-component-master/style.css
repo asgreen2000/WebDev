@@ -103,7 +103,7 @@ body {
 
     .container .header {
         
-        grid-column: 1 /span 3;
+        grid-column: 1 /span 2;
         padding: 1rem 2rem;
         justify-content: center;
         border-top-right-radius: 10px;
