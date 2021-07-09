@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
+
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+    --off-cyan: hsla(179, 62%, 43%, 0.699);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Karla", sans-serif;
+    background-color: var(--light-gray);
+    padding: 5rem 2rem;
+}
+
+.container {
+
+    background-color: white;
+    border-radius: 5px;
+}
+
+.header {
+    padding: 15px;
+}
+
+.header h2 {
+    color: var(--cyan);
+}
+.header h3 {
+    color: var(--bright-yellow);
+}
+
+.header p {
+    line-height: 25px;
+    color: gray;
+}
+
+
+/* Price */
+
+.price {
+    background-color: var(--cyan);
+    padding: 1rem 1rem 1.5rem 1rem;
+    color:#fff;
+}
+
+.price .button {
+    margin-top: 30px;
+    width: 100%;
+    text-transform: uppercase;
+    background-color: var(--bright-yellow);
+    border-color: navajowhite;
+    border-width: 0em;
+    border-radius: 5px;
+    padding: 10px;
+    color: #fff;
+}
+
+.price .button:hover {
+    background: var(--light-gray);
+    color: var(--cyan);
+}
+
+
+.off-white{color: rgba(255, 255, 255, 0.705);}
+.large-text{font-size: 1.5rem;}
+
+
+.why-us {
+    background-color: var(--off-cyan);
+    padding: 15px;
+    color: #fff;
+    line-height: 0;
+    border-bottom-right-radius: 4px;
+}
+
+
+.why-us ul {
+
+    list-style: none;
+}
+
+@media screen and (min-width: 594px) { 
+
+    body {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .container .header {
+        
+        grid-column: 1 /span 3;
+        padding: 1rem 2rem;
+        justify-content: center;
+        border-top-right-radius: 10px;
+    
+    }
+
+    .container .price {
+        padding: .75rem 2rem;
+        
+    }
+    
+    .container .why-us {
+        padding: .75rem 2rem;
+    }
+    
+    .container .why-us p {
+        line-height: .4;
+    }
+
+
+
+
+}
+
