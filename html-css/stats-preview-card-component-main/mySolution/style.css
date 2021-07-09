@@ -97,3 +97,58 @@ p {
     font-size: 15px;
     line-height: 1.6;
 }
+
+
+@media (min-width: 768px)
+{
+    body {
+        display: flex;
+        justify-content: center;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 800px;
+        margin-top: 150px;
+        padding: 0;
+    }
+
+    .container .picture {
+
+        background: url(/images/image-header-desktop.jpg);
+        background-size: cover;
+        width: 50%;
+        height: inherit;
+        border-radius: 0 10px 10px 0px;
+    }
+
+    .container .card {
+        width: 50%;
+        text-align: left;
+        padding: 0;
+        min-height: 400px;
+    }
+
+    .container .picture .overlay {
+        
+        height: 100%;
+        border-radius: 0 10px 10px 0px;
+    }
+
+    p {
+        margin-top: 60px;
+        font-size: 18px;
+    }
+
+    ul {
+        margin-top: 50px;
+        display: flex;
+        margin-left: 25px;
+    }
+
+    li {
+        margin-right: 15px;
+    }
+
+}
