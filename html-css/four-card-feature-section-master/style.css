@@ -1,0 +1,112 @@
+
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --very-dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --very-light-gray: hsl(0, 0%, 98%);
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+}
+
+.bold-text {
+    text-decoration: solid;
+}
+.gray-text {
+    color: rgb(197, 182, 182);
+}
+
+.main {
+    padding: 50px 20px 20px 50px;
+    background: var(--very-light-gray);
+}
+
+.header {
+
+    margin-bottom: 30px;
+    line-height: 25px;
+}   
+
+.header p {
+    margin-top: 20px;
+}
+
+.main p {
+    color: var(--grayish-blue);
+}
+
+
+
+.card {
+    margin-bottom: 30px;
+    border-style:solid;
+    background-color: aliceblue;
+    border-width: 0px;
+    border-top-width: 2px;
+    padding: 15px;
+}
+
+.supervisor {
+    border-top-color: aqua;
+}
+
+.team-builder {
+    border-top-color: red;
+}
+
+.karma {
+    border-top-color: yellow;
+}
+
+.calculator {
+    border-top-color:blue;
+}
+
+img{
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+@media (min-width: 992px) {
+    
+    body {
+        background-color: #fff;
+    }
+
+    .main {
+        background-color: #fff;
+    }
+
+    .header {
+        text-align: center;
+    }
+    
+    
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .card {
+        width: 33%;
+        margin-right: 20px;
+        min-height: 200px;
+    }
+}
+

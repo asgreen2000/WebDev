@@ -1,0 +1,124 @@
+
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #674baf;
+    background-image: url("/images/bg-desktop.svg");
+    
+}
+
+.container {
+
+    padding: 40px 50px 0 50px;
+    
+}
+
+.main {
+    display: flex;
+    margin-top: 30px;
+}
+
+.logo img {
+    display: block;
+    animation: shake;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes shake {
+    from {
+        
+        transform:rotateX(360deg);
+    }
+    
+    to {
+        transform:rotateX(-360deg);
+    }
+}
+
+.main .content {
+
+    color: aliceblue;
+    padding: 50px;
+}
+
+.main .content h2 {
+
+    line-height: 50px;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.main .content p {
+    font-size: 20px;
+    color: white;
+    opacity: 0.5;
+    margin-bottom: 30px;
+}
+
+.main .content button {
+
+    padding: 10px 40px 10px 40px;
+    border-radius: 20px;
+    border-style: none;
+}
+.main .content button:hover {
+    background-color: #674baf;
+}
+
+.contact {
+
+    margin-top: 20px;
+}
+
+.contact ul {
+
+    list-style: none;
+    display: flex;
+    float: right;
+}
+
+.contact ul li {
+    margin-right: 10px;
+}
+
+
+@media only screen and (max-width: 1000px) 
+{
+    .container {
+        background-color: var(--violet);
+        background: url(/images/bg-mobile.svg);
+        padding: 20px 10px 20px 10px;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main .content h2 {
+
+        line-height: 40px;
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .contact {
+        display: flex;
+        align-items: center;
+    }
+    .contact ul {
+        float: none;
+        display: flex;
+        margin: 0 auto;
+    }
+}

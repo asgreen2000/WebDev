@@ -1,0 +1,119 @@
+
+:root {
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    padding: 50px 25px 25px 50px;
+    background: var(--light-grayish-magenta);
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.intro h2 {
+    color: var(--very-dark-magenta);
+    font-size: 30px;
+}
+
+.intro p {
+    color: var(--dark-grayish-magenta);
+}
+
+.intro ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.intro ul li {
+
+    margin-bottom: 20px;
+    background-color: rgb(209, 203, 203);
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--very-dark-magenta);
+    line-height: 30px;
+}
+
+
+.pink-text {
+    color: var(--soft-pink);
+}
+
+.review .card {
+
+    background-color: var(--very-dark-magenta);
+    margin-bottom: 20px;
+    padding: 20px;
+    color: aliceblue;
+    border-radius: 5px;
+}
+
+
+.review .card .customer-info {
+    display: flex;
+}
+
+.review .card .icon {
+
+    border-radius: 50%;
+}
+
+.review .card .customer-info .info {
+
+    padding: 15px;
+}
+
+.review .card .content {
+    margin-top: 20px;
+}
+
+@media (min-width: 625px) {
+    
+  
+
+    .intro {
+        display: flex;
+        text-align: left;
+    }
+
+    .intro .main-content {
+        width: 40%;
+        padding: 30px 100px 100px 30px;
+    }
+    .intro ul {
+        width: 60%;
+    }
+    
+    .intro ul li {
+        display: flex;
+        width: 40%;
+    }
+
+    .intro ul li p {
+        margin-left: 30px;
+    }
+
+    .review {
+        display: flex;
+        margin: 0 auto;
+    }
+    
+    .review .card {
+        margin-right: 70px;
+        padding: 30px;
+    }
+}
